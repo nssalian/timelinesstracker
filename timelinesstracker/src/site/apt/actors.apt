@@ -1,1 +1,54 @@
-Actors
+Actors for the Timeliness Tracker System
+
+* FlightStats Web Servers
+
+    These are repositories for all the information regarding the flights. 
+    These servers are queried from the user interface to extract the information 
+    through an HTTP Request. They extract the data and return to the interface to 
+    be presented to the user.
+
+* Airline Company
+
+    It has a pivotal role in this system. The airline company decides and controls 
+    the schedule of the flights. The airline company enters the data about the flight 
+    i.e. starting point, destination, time, route, delay time. The server data is updated 
+    and maintained by the airline company that allows the user to retrieve real-time and 
+    consistent information about the flights via the FlighStats web service.
+
+* Federal Aviation Authority (FAA)
+
+    This federal body is responsible for regulating the norms of air travel in the United States. 
+    All the policies, protocols are outlined and every airline, airport have to abide by these 
+    rules. The system should comply with the rules of the FAA as it provides the information to the 
+    user. The rules and policies should be available to be shown to the user if necessary or the 
+    user tries to query a restricted information.
+
+* Google Static Maps
+
+    The Google maps provides a view of the flight’s starting point and destination on the United States 
+    map. This is to provide an additional flight positional display feature in the system. This helps improve the 
+    aesthetics and helps to better visualize the flight details. 
+
+* Weather Database
+
+    The primary cause of delay is unforeseen weather conditions. The database from the weather department 
+    helps the application provide the user with the current and projected weather forecast that will help predict 
+    a delay in the flight travel. The user can also query the weather forecast before asking for the flight information, 
+    if he/she wishes to travel in the week and wishes to make other/alternate travel plans. The system interfaces with 
+    the weather database and it informs the user about the projected delay so that he can get to the airport at the right time.
+
+* Traveler
+
+    The traveler is the principal user of the system. He/she has a mobile interface and a web interface to access the 
+    system. He/she can query the information of a flight, airport or query about a route. The user selects the flight, airport, etc. 
+    according to the information that he/she seeks. The user has or may have a login to save his account information like 
+    past travels. The user can choose where to get the information i.e. his mobile interface or his web interface.
+
+* SPARQCode Interface
+
+    The SPARQCode interface reads QR Codes (Quick Response Code) which is a type of matrix barcode (or a two-dimensional bar code). 
+    It is basically an optical machine-readable label. The purpose of the QR code is provide access to the web interface via the 
+    user's mobile device. It contains a URL encoded within it which the user scans using the camera on his/her smartphone. This 
+    ultimately provides the flight details on the user's smartphone. The SPARQ interface on the mobile device understands the 
+    QR code and gives the access to the relevant application store (Play Store or iTunes Store) depending on the operating 
+    system of the mobile device.
