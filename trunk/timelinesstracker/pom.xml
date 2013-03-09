@@ -10,7 +10,7 @@
 
   <name>timelinesstracker</name>
   <description>A real-time flight timeliness tracker utility.</description>
-  <url>http://maven.apache.org</url>
+  <url>http://code.google.com/p/timelinesstracker/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
